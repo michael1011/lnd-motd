@@ -15,7 +15,7 @@ with open("requirements.txt") as req_file:
 
 setuptools.setup(
     name="lnd-motd",
-    version="1.0.4",
+    version="1.0.0",
     author="michael1011",
     author_email="me@michael1011.at",
     description="A CLI tool to print basic information about a Bitcoin Core and LND node",
@@ -25,6 +25,6 @@ setuptools.setup(
     url="https://github.com/michael1011/lnd-motd",
     packages=setuptools.find_packages(),
     install_requires=install_requires,
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     entry_points={"console_scripts": ["lnd-motd = lnd_motd.__main__:main"]},
 )
